@@ -104,14 +104,14 @@ int main(){
 			if(textline == "> Students"){
 				state = 3;
 			}else{
-			    allcourses.back().lecture_list.push_back(textline);
+			    allcourses[allcourses.size() - 1].lecture_list.push_back(textline);
 			}			
 		}else{
 			if(textline == "---------------------------------------"){
 				state = 1;
 			}else{
 				student *p = findstudent(allstudents,atof(textline.c_str()));
-				allcourses.back().student_list.push_back(p);
+				allcourses[allcourses.size() - 1].student_list.push_back(p);
 
 			}
 		}
