@@ -8,9 +8,10 @@
 using namespace std;
 
 struct student{
-
-    //[Missing Code 1] Define struct student with four members (name ,id , gender, gpa);
-    
+    string name;
+    int id;
+    char gender;
+    float gpa;
 };
 
 struct course{
@@ -35,11 +36,11 @@ student text2student(string text){
     
     //[Missing Code 2] Fill in the blank with the correct code.;
     s.name = name;
-    s.id = _____________;
-    s.gender = _____________;
-    s.gpa = _____________;
+    s.id = stoi(id);
+    s.gender = gen[0];
+    s.gpa = stof(gpa);
     
-    _____________;
+    return s;
 }
 
 
