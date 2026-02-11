@@ -34,7 +34,7 @@ student text2student(string text){
         else if(count == 3) gpa += text[i];
     }
     
-    //[Missing Code 2] Fill in the blank with the correct code.;
+    
     s.name = name;
     s.id = stoi(id);
     s.gender = gen[0];
@@ -44,7 +44,7 @@ student text2student(string text){
 }
 
 
-student * findstudent(vector<student> &allstudents,int key){ //[Missing Code 4] There is something wrong in this line.
+student * findstudent(vector<student> &allstudents,int key){ 
 	for(unsigned int i = 0; i < allstudents.size(); i++){
 		if(allstudents[i].id  == key) return &allstudents[i];
 	}
