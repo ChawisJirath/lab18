@@ -13,6 +13,7 @@ double overlap(Rect *R1,Rect *R2){
    double bottom=max(R1->y-R1->h,R2->y-R2->h);
    double height=top-bottom;
    double area;
+   
    if(width>0 && height>0) area = width*height;
    else area = 0;  
    return area;
